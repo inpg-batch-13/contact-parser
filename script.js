@@ -1,5 +1,9 @@
 function getContacts(str) {
-  // your code here
+  var split = str.split(',')
+  var splitted = split.map(function (x){
+    return x.split(',')
+  })
+
 }
 
 var text = 'dimitri:dimitri@mail.com:male,icha:icha@mail.com:female,windi:windi@mail.com:female';
