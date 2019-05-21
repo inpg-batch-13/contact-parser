@@ -1,12 +1,15 @@
 function getContacts(str) {
-    var splitsatu = str.split(',')
- 
-    var splitdua =[]
-    for (i = 0 ; i < splitsatu.length ; i++){
-     splitdua[i]= new Array (splitsatu[i])
-      }
-    
-  return splitdua
+
+var splitsatu = str.split(',')
+
+var splitdua =[]
+for (i = 0 ; i < splitsatu.length ; i++){
+ splitdua[i]= splitsatu[i].toString().split(':')
+  }
+
+
+
+return splitdua
  }
 // return splitdua
 
