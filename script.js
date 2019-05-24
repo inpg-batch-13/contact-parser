@@ -2,7 +2,7 @@ function getContacts(str) {
 
   var split = str.split(',')
   var splitted = split.map(function (x){
-    return x.split(',').join(':').split(':')
+    return x.split(':')
 
   })
 
