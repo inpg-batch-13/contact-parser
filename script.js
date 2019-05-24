@@ -1,13 +1,15 @@
 function getContacts(str) {
+
   var split = str.split(',')
   var splitted = split.map(function (x){
-    return x.split(',')
+    return x.split(',').join(':').split(':')
+
   })
-  var result = splitted.map(function(i){
-    return i.join(':').split(':')
-  })
-  return result
+
+  return splitted
+  
 }
+
 
 var text = 'dimitri:dimitri@mail.com:male,icha:icha@mail.com:female,windi:windi@mail.com:female';
 console.log(getContacts(text))
